@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Navigation from '@/components/layout/Navigation';
-import { Footer } from '@/components/layout/Footer';
+import Navigation from "@/components/layout/Navigation";
+import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
 
+// Load custom fonts
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -16,6 +17,7 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+// Metadata for the document head
 export const metadata: Metadata = {
   title: "Jarod Rutledge, PhD",
   description: "Research, investments, and strategy work in life sciences",
@@ -27,15 +29,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <head>
-        <title>{metadata.title}</title>
-      </head>
-      <body className="flex flex-col min-h-screen">
+    <html lang="en">
+      <body
+        className={`flex flex-col min-h-screen ${geistSans.variable} ${geistMono.variable}`}
+      >
         <Navigation />
-        <main className="flex-grow">
-          {children}
-        </main>
+        <main className="flex-grow">{children}</main>
         <Footer />
       </body>
     </html>
