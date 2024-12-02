@@ -12,7 +12,34 @@ export default function Contact() {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
   const handleSubmit = async (e: React.FormEvent) => {
-    // ... existing submit handler code ...
+    e.preventDefault();
+    setStatus('submitting');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
+      // Reset form and show success message
+      setStatus('success');
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
+    } catch (error) {
+      console.error('Failed to send message:', error);
+      setStatus('error');
+    }
   };
 
   return (
@@ -40,7 +67,6 @@ export default function Contact() {
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               />
             </div>
-
             <div>
               <label htmlFor="email" className="block text-sm text-slate-600 mb-2">
                 Email
@@ -54,7 +80,6 @@ export default function Contact() {
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               />
             </div>
-
             <div>
               <label htmlFor="subject" className="block text-sm text-slate-600 mb-2">
                 Subject
@@ -68,7 +93,6 @@ export default function Contact() {
                 onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
               />
             </div>
-
             <div>
               <label htmlFor="message" className="block text-sm text-slate-600 mb-2">
                 Message
@@ -82,7 +106,6 @@ export default function Contact() {
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               />
             </div>
-
             <button
               type="submit"
               disabled={status === 'submitting'}
@@ -90,7 +113,6 @@ export default function Contact() {
             >
               {status === 'submitting' ? 'Sending...' : 'Send Message'}
             </button>
-
             {status === 'error' && (
               <p className="text-red-600 text-sm">
                 Failed to send message. Please try again or contact me through other means.
