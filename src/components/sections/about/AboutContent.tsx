@@ -32,7 +32,7 @@ export const AboutContent = () => {
           My family comes from humble roots in Tuba City, AZ, and Flint, MI. Regular people understand 
           intuitively that new therapies for radically improved health and longer life are an incredible 
           public good from which they have much to gain.
-
+        </p>
 
         <h2 className="text-xl font-medium text-gray-800 pt-6">Adventures</h2>
         <p className="text-gray-600 leading-relaxed">
