@@ -13,25 +13,25 @@ export const AboutContent = () => {
           After completing PhD and postdoc work, I left my Stanford fellows position to join 
           The Amaranth Foundation, where I am a group leader and the head of investments. 
           Along the way, I have founded 3 companies working in drug development, diagnostics, 
-          and computer vision technology.
+          and computer vision technology, and provided consulting services to the biotech VC 
+          industry in San Francisco.
         </p>
 
         <h2 className="text-xl font-medium text-gray-800 pt-6">Values</h2>
         <p className="text-gray-600 leading-relaxed">
-          My core values are agency, curiosity, and compassion. I beleive the most important
-          axis of personal agency is health. Without it, your freedom is fundamentally constrained.
-          That is why I want to create a world where everyone has complete agency over their health,
-          which is only possible if we can stop and reverse the aging process.
+          My core values are agency, curiosity, and compassion. I believe the most important
+          axis of personal agency is health. Without health, your freedom is fundamentally constrained.
+          Biological aging robs us collectively of more health than all other ailments and 
+          insults combined. Worldwide, it aging is responsible for 50% of all deaths and reductions in quality of life.
+          To create a world where everyone has complete agency over their health and freedom 
+          to pursue their goals and passions, we must discover how to stop and reverse the aging process.
         </p>
         <p className="text-gray-600 leading-relaxed">
-          Many academics, scientists, and other "elites" I meet object that curing aging will exacerbate 
-          inequality, and is a vanity project for billionaires. I think they could not be more wrong.
-          My family comes from humble roots in Tuba City, AZ, and Flint, MI, and I still have deep ties to these communities.
-          I can tell you that the people in my community are rarely concerned about this, recognize
-          it is a solvable problem, and understand intuitively that those around the world without 
-          access to the best healthcare for graceful aging have much more to gain from new therapies for
-          radically improved health. 
-        </p>
+          Some academics, scientists, and intellectual elites I meet object that curing aging will exacerbate 
+          inequality or rob life of its fundamental meaning. I think they could not be more wrong.
+          My family comes from humble roots in Tuba City, AZ, and Flint, MI. Regular people understand 
+          intuitively that new therapies for radically improved health and longer life are an incredible 
+          public good from which they have much to gain.
 
 
         <h2 className="text-xl font-medium text-gray-800 pt-6">Adventures</h2>
