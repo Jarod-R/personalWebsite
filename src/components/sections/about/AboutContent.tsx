@@ -19,19 +19,10 @@ export const AboutContent = () => {
 
         <h2 className="text-xl font-medium text-gray-800 pt-6">Values</h2>
         <p className="text-gray-600 leading-relaxed">
-          My core values are agency, curiosity, and compassion. I believe the most important
-          axis of personal agency is health. Without health, your freedom is fundamentally constrained.
-          Biological aging robs us collectively of more health than all other ailments and 
-          insults combined. Worldwide, it aging is responsible for 50% of all deaths and reductions in quality of life.
-          To create a world where everyone has complete agency over their health and freedom 
-          to pursue their goals and passions, we must discover how to stop and reverse the aging process.
+          My core values are agency, curiosity, and compassion. I believe the most important axis of personal agency is health. Without health, your freedom is fundamentally constrained. Biological aging robs us collectively of more health than all other ailments and insults combined. Worldwide, aging is responsible for 50% of all deaths and reductions in quality of life.  To create a world where everyone has complete agency over their health and freedom to pursue their goals and passions, we must discover how to stop and reverse the aging process.        
         </p>
         <p className="text-gray-600 leading-relaxed">
-          Some academics, scientists, and intellectual elites I meet object that curing aging will exacerbate 
-          inequality or rob life of its fundamental meaning. I think they could not be more wrong.
-          My family comes from humble roots in Tuba City, AZ, and Flint, MI. Regular people understand 
-          intuitively that new therapies for radically improved health and longer life are an incredible 
-          public good from which they have much to gain.
+          Some academics, scientists, and others I meet object that curing aging will exacerbate inequality or rob life of its fundamental meaning. I think they are wrong. My family comes from humble roots in Tuba City, AZ, and Flint, MI. Regular people have much more to gain from rapamycin and metformin than billionaires who already have access to perfect diets, stress-free lives, and elite healthcare. As to meaning, I get more of that from time with loved ones and my passions. Feel free to send me your best argument for why we need aging and death, and I will gladly debate you.        
         </p>
 
         <h2 className="text-xl font-medium text-gray-800 pt-6">Adventures</h2>
@@ -45,8 +36,8 @@ export const AboutContent = () => {
 
         <h2 className="text-xl font-medium text-gray-800 pt-6">Music</h2>
         <p className="text-gray-600 leading-relaxed">
-          I am a classically trained violinist, and was the youngest ever professional member 
-          of the Flagstaff Symphony Orchestra. Nowadays, I am picking up the guitar, the handpan,
+          I am a classically trained violinist, and once upon a tiem was the youngest professional member 
+          of multiple symphony orchestra in Arizona. Nowadays, I am picking up the guitar, the handpan,
           and electronic music production. Check out some of my music here.
         </p>
 
