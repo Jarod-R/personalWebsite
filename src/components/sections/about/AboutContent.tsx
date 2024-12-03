@@ -41,10 +41,6 @@ export const AboutContent = () => {
           and electronic music production. Check out some of my music here.
         </p>
 
-        <h2 className="text-xl font-medium text-gray-800 pt-6">Vision</h2>
-        <p className="text-gray-600 leading-relaxed">
-          I believe we're at a crucial moment in human history where advances in biology, computation, and medicine are converging to make meaningful interventions in aging possible. My goal is to accelerate this progress by connecting scientific insights with the resources and expertise needed to develop effective therapeutics.
-        </p>
       </div>
     </section>
   );
